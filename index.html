@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mailee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing Dancing Script and a nice handwritten font for the letter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Sacramento&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Canvas for Living Background -->
+    <canvas id="heart-canvas"></canvas>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Envelope Wrapper -->
+        <div class="envelope-wrapper" id="envelope-wrapper">
+            <div class="envelope">
+                <div class="front pocket"></div>
+                <div class="front flock"></div> <!-- Side flaps styling if needed, or simplified -->
+                <div class="front flap" id="flap"></div>
+
+                <!-- The Letter (Initially tucked inside) -->
+                <div class="letter-preview" id="letter-preview">
+                    <!-- This is the paper that slides out -->
+                    <div class="paper-texture"></div>
+                    <div class="preview-text">Para: Mailee</div>
+                </div>
+
+                <div class="wax-seal" id="seal"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Full Screen Letter Overlay (Hidden Initially) -->
+    <div class="letter-overlay" id="letter-overlay">
+        <div class="letter-paper">
+            <button class="close-btn" id="close-btn">&times;</button> <!-- Optional, but good UX -->
+
+            <header class="letter-header">
+                <p class="date">14 de Febrero de 2026</p>
+                <p class="salutation">Hola, mi amor:</p>
+            </header>
+
+            <div class="letter-body">
+                <p>Si estás leyendo esto es porque el calendario ha marcado de nuevo esa fecha. Sí, esa que la sociedad,
+                    en su afán comercial, ha designado como el día ideal para mostrar nuestro amor. Pero tú y yo sabemos
+                    que lo nuestro trasciende un día.</p>
+
+                <p>Sin embargo, aquí estoy. Escribiéndote porque, aunque fui incapaz de materializar un ramo de flores
+                    que cruzara intacto los más de 4,640 kilómetros que separan mi alma de la tuya, necesitaba hacer
+                    algo que perdure. Algo que viaje más rápido que un avión y golpee más fuerte que una línea de bajo
+                    en una canción de tu <em>Dangerous Woman</em>.</p>
+
+                <p>Quería entregarte esta carta como un testimonio de lo que siento, ahora que llevamos más de una
+                    década entrelazando nuestras historias. Hoy quiero abrirme contigo con una vulnerabilidad que pocas
+                    veces he mostrado. Primero, para pedirte perdón. Porque te amo con una intensidad que a veces me
+                    asusta, pero soy consciente de que no siempre he sabido estar a la altura de la relación casi de
+                    cine que mereces. No siempre he sido el hombre que has necesitado, e incluso, en muchas ocasiones,
+                    he fallado en expresar mi amor con la claridad, algo que tú demandas.</p>
+
+                <p>A veces desearía ser un "prescindible", tener múltiples versiones de mí mismo para que, si una falla,
+                    la siguiente pueda hacerlo mejor, aprender de los errores pasados y entregarte la versión perfecta
+                    que te mereces. Pero solo tengo esta vida y este cuerpo, y con ellos, hoy me redimo ante ti,
+                    jurándote que siempre fuiste, eres y serás la dueña absoluta de mi alma y mi corazón.</p>
+
+                <p>Dicho esto, quiero dejar de mirar las fallas para enfocarme en la maravilla que eres. Quiero sacar a
+                    flote todo aquello que me encanta, que me emociona y que hace que se me ponga la piel de gallina
+                    cada vez que pienso en el momento en que por fin rompamos esta distancia. Pienso en ese día en que
+                    nos reuniremos en nuestro primer "lugar especial", ese que será nuestro propio mundo junto al
+                    arroyo, donde dibujaremos nuestros mapas, las reglas las pondremos nosotros y cada rincón será una
+                    aventura antes de la cena.</p>
+
+                <p>Así que, empecemos por todo aquello que me hace querer abrazarte, besarte y, te lo digo con el
+                    corazón (y bastante lujuria) en la mano, llenarte de amor a cada segundo:</p>
+
+                <h3>Tus gustos y tu pasión desbordada</h3>
+                <p>Hay un universo entero dentro de ti. Te gustan un montón de cosas, algunas que, confieso, a veces ni
+                    siquiera entiendo del todo, pero me fascina ser el espectador de tu entusiasmo. Amo cómo vives la
+                    cultura pop; para ti no es solo entretenimiento, es un ritual. Admiro cómo sientes cada letra y cada
+                    vibración de una canción de amor o desamor, ya sea con el estilo de <em>Miss Americana</em> o con la
+                    potencia vocal de Ariana. Lo vives con una intensidad digna de un medio tiempo del Super Bowl.
+                    Tienes esa capacidad de analizar una performance en los Grammys o los Oscars con un ojo crítico y
+                    apasionado que me deja boquiabierto. Eres en definitiva mi artista pop favorita.</p>
+
+                <h3>Lo nuestro</h3>
+                <p>Y luego está lo nuestro. Cómo disfrutamos ver cosas que el mundo catalogaría de infantiles o
+                    absurdas, pero que a tu lado se vuelven obras maestras. Pienso en nosotros viendo falsos
+                    documentales sobre pingüinos surfistas o historias de peces que sueñan con la cima en el arrecife,
+                    riéndonos de chistes casi tan tontos como un villano de caricatura, y en esos momentos siento que
+                    somos como aquel pingüino buscando su ola perfecta: solo que yo ya la encontré, y eres tú.</p>
+
+                <p>Esas tardes de maratón, ya sea explorando la complejidad de los viajes entre dimensiones o la crudeza
+                    de un futuro lleno de pantallas negras, me han enseñado que no importa si estamos viendo una
+                    distopía o una comedia, lo único que hace que la experiencia sea hermosa y me haga apreciar la vida,
+                    es que tú estás ahí, disfrutando conmigo.</p>
+
+                <h3>Tus contrastes</h3>
+                <p>También amo tus contrastes: tu poca resistencia al alcohol frente a tu gusto por las bebidas fuertes,
+                    o tu deseo insaciable de visitar lugares hermosos. Aunque, siendo honesto, cualquier paisaje,
+                    incluso el bosque más misterioso de Lo Desconocido, palidece si lo comparo con tu belleza. Esas
+                    cosas, Mailee, son las que me hacen querer despertar cada día y <em>vivir</em>, no solo existir
+                    esperando a que pase el tiempo.</p>
+
+                <h3>Tu sentido de la moda</h3>
+                <p>Seré breve, directo y totalmente sincero: tienes un don. Te vistes de forma tan variada, colorida y
+                    hermosa que a veces siento que vivo con una celebridad. Tienes un estilo tan radiante y vivo que me
+                    hace ver la vida, que a veces es gris como una oficina que vende papel en Scranton antes de que la
+                    recepcionista y el vendedor estuvieran juntos, llena de color y esperanza. Amo que siempre sabes qué
+                    ponerte, cómo combinar texturas y cómo sorprender a mi vista. Tienes esa capacidad de reinvención,
+                    de encantarme con tu belleza una y otra vez, como si cada día fuera una nueva gala donde tú eres la
+                    estrella indiscutible y yo, el afortunado que te lleva del brazo.</p>
+
+                <h3>Tu inteligencia y tu esencia</h3>
+                <p>Eres brillante, mi amor. Eres tan capaz de aprender, entender y crecer como persona que siempre me
+                    causa sorpresa. Tienes una mente compleja, capaz de entender los matices más oscuros de la
+                    tecnología o la ironía de los cuentos de hadas que no son lo que parecen, y aplicarlos a la vida
+                    real con una sabiduría que me desarma. Podrías hacer lo que quisieras en esta vida; podrías
+                    conquistar el mundo si te lo propusieras. Pero lo que más me llena el alma, lo que me hace amarte
+                    con locura, es que, teniendo todas las opciones del mundo, tu elección diaria es simplemente ser
+                    feliz y compartir esa felicidad conmigo. Eres como una cebolla llena de capas, y cada capa que
+                    descubro es más hermosa que la anterior.</p>
+
+                <h3>Nuestro Futuro</h3>
+                <p>Sé que 10 años suenan a mucho tiempo, y que la distancia a veces se siente como una pared inmensa.
+                    Pero recuerda lo que dijo aquella recepcionista enamorada: "No se trata de cuánto tiempo esperas,
+                    sino de a quién estás esperando". Y yo te esperaría en esta vida, en cualquier línea temporal, y en
+                    cualquier simulación.</p>
+
+                <p class="final-love">Te amo, Mailee, eres mi multiverso favorito.</p>
+
+                <div class="signature">
+                    <p>Erick Ulises González Madriz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
